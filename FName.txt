@@ -1,0 +1,30 @@
+__int64 __usercall sub_0@<rax>(unsigned int a1@<eax>, _DWORD *a2@<rdx>, _WORD *a3@<rcx>)
+{
+  _WORD *v3; // rdi@1
+  unsigned __int64 v4; // r8@1
+  signed int v5; // edx@1
+  __int64 result; // rax@1
+  __int64 v7; // r8@2
+  unsigned int v8; // edx@3
+
+  v3 = a2;
+  v4 = 2 * ((unsigned __int64)*a3 >> 6);
+  *a2 += (_DWORD)a2;
+  v5 = 26;
+  result = a1 >> 6;
+  if ( (_DWORD)result )
+  {
+    v7 = (unsigned int)result;
+    do
+    {
+      v8 = v5 + 45297;
+      *v3 = v8 + ~*v3;
+      result = v8 << 8;
+      ++v3;
+      v5 = result | (v8 >> 8);
+      --v7;
+    }
+    while ( v7 );
+  }
+  return result;
+}
