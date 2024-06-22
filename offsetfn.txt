@@ -1,6 +1,5 @@
 int Engine =  0x1289AF68;
 int UWorlds = 0x129EDDD8;
-int Fname = 0x12BAE1C0;
 int Gameinstance = 0x1D8; 
 int LocalPlayers = 0x38; 
 int PlayerController = 0x30; 
