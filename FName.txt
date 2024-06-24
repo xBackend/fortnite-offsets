@@ -1,30 +1,30 @@
-__int64 __usercall sub_0@<rax>(unsigned int a1@<eax>, _DWORD *a2@<rdx>, _WORD *a3@<rcx>)
-{
-  _WORD *v3; // rdi@1
-  unsigned __int64 v4; // r8@1
-  signed int v5; // edx@1
-  __int64 result; // rax@1
-  __int64 v7; // r8@2
-  unsigned int v8; // edx@3
+latest fname decryption
 
-  v3 = a2;
-  v4 = 2 * ((unsigned __int64)*a3 >> 6);
-  *a2 += (_DWORD)a2;
-  v5 = 26;
-  result = a1 >> 6;
-  if ( (_DWORD)result )
-  {
-    v7 = (unsigned int)result;
-    do
-    {
-      v8 = v5 + 45297;
-      *v3 = v8 + ~*v3;
-      result = v8 << 8;
-      ++v3;
-      v5 = result | (v8 >> 8);
-      --v7;
-    }
-    while ( v7 );
-  }
-  return result;
+void fdf()
+{
+	char* v2; // rdi
+	int v4; // ebx
+	unsigned int v5; // er9
+	unsigned int v6; // er8
+	__int64 result; // rax
+	unsigned int v8; // er9
+	int v9; // ecx
+ 
+	v2 = buffer;
+	v4 = Lenght;
+	v5 = *(unsigned int*)(module + 0x118B13E8); 
+	v6 = v5 ^ 0x9C677CC5;
+	result = 1041204193 * v5;
+	v8 = v5 % 0x21;
+	v9 = 0;
+	if (v4)
+	{
+		do
+		{
+			result = v9 + v8;
+			++v9;
+			v6 += result;
+			*v2++ ^= v6;
+		} while (v9 < v4);
+	}
 }
