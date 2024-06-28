@@ -1,6 +1,6 @@
 namespace SDK {
 
-uintptr_t UWorld = 0x129e1dd8;
+uintptr_t UWorld = 0x117145c8;
 uintptr_t GetNameByIndex = 0x12BA9140
 uintptr_t FindObject = 0x1DE185C
 
